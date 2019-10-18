@@ -1,16 +1,16 @@
-import { Component } from 'react';
+import React from 'react';
+import { Box } from '@material-ui/core';
+import CssBaseline from '@material-ui/core/CssBaseline/CssBaseline';
 import './App.css';
+import NavBar from './components/Navbar';
+import Intro from './components/Intro';
 
-export default class App extends Component {
-  state = {
-    name: 'jsone-docs',
-  };
+const App = () => (
+  <Box>
+    <CssBaseline />
+    <NavBar />
+    <Intro />
+  </Box>
+);
 
-  render() {
-    return (
-      <div className="App">
-        <h1>Welcome to {this.state.name}</h1>
-      </div>
-    );
-  }
-}
+export default App;
