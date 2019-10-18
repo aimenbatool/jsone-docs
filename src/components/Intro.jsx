@@ -1,16 +1,39 @@
 import { React } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box } from '@material-ui/core';
+import { Box, Container, Button } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
-  intro: {
-    backgroundImage: 'url(../../../intro.jpg)',
+  introWrapper: {
+    backgroundImage: 'url(../../../assets/intro2.jpg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     minHeight: 500,
-    margin: 0,
-    padding: 0,
+    padding: 2,
+  },
+  intro: {
+    marginTop: 120,
+    fontFamily: 'Merriweather, serif',
+    color: 'white',
+    textAlign: 'center',
+  },
+  title: {
+    fontSize: 56,
+  },
+  description: {
+    fontFamily: 'Nanum Gothic, sans-serif',
+  },
+  learnMoreButton: {
+    marginTop: 12,
+    color: 'white',
+    padding: '14px 44px',
+    border: '1px white solid',
+    fontSize: 16,
+    '&:hover': {
+      backgroundColor: 'white',
+      color: '#1a364a',
+      border: '1px white solid',
+    },
   },
 }));
 
@@ -18,8 +41,14 @@ const Intro = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.intro}>
-    askdjkasd
+    <Box className={classes.introWrapper}>
+      <Container className={classes.intro}>
+        <h1 className={classes.title}>JSON-e V3.0.1</h1>
+        <h2 className={classes.description}>
+          A data-structure parameterization system for embedding context in JSON objects
+        </h2>
+        <Button className={classes.learnMoreButton}>Learn More</Button>
+      </Container>
     </Box>
   );
 };

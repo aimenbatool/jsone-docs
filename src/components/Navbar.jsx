@@ -12,8 +12,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    margin: 0,
-    padding: 0,
   },
   appBar: {
     boxShadow: 'none',
@@ -22,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
@@ -40,8 +38,8 @@ const NavBar = () => {
               JSONE
           </Typography>
           <Button color="inherit">Home</Button>
-          <Button color="inherit">About</Button>
           <Button color="inherit">Interfaces</Button>
+          <Button color="inherit">About</Button>
           <Button color="inherit">Playground</Button>
 
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
