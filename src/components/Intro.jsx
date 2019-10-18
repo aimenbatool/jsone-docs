@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
     border: '1px white solid',
     fontSize: 16,
     '&:hover': {
-      backgroundColor: 'white',
+      backgroundColor: '#ece9e9',
       color: '#1a364a',
       border: '1px white solid',
     },
