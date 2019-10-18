@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
     backgroundImage: 'url(../../../assets/intro2.jpg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
+    backgroundPosition: 'bottom',
     minHeight: 500,
     padding: 2,
   },
