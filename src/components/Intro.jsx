@@ -1,13 +1,14 @@
-import { React } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Container, Button } from '@material-ui/core';
+import IntroBanner from '../assets/intro2.jpg';
 
 const useStyles = makeStyles(() => ({
   introWrapper: {
-    backgroundImage: 'url(../../../assets/intro2.jpg)',
+    backgroundImage: `url(${IntroBanner})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom',
+    backgroundPosition: 'center',
     minHeight: 500,
     padding: 2,
   },
