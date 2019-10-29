@@ -3,19 +3,19 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Container, Button } from '@material-ui/core';
 import IntroBanner from '../assets/intro2.jpg';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   introWrapper: {
     backgroundImage: `url(${IntroBanner})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    minHeight: 500,
-    padding: 2,
+    minHeight: theme.spacing(62),
+    padding: theme.spacing(0.25),
   },
   intro: {
-    marginTop: 120,
+    marginTop: theme.spacing(15),
     fontFamily: 'Merriweather, serif',
-    color: 'white',
+    color: theme.palette.common.white,
     textAlign: 'center',
   },
   title: {
@@ -25,9 +25,9 @@ const useStyles = makeStyles(() => ({
     fontFamily: 'Nanum Gothic, sans-serif',
   },
   learnMoreButton: {
-    marginTop: 12,
-    color: 'white',
-    padding: '14px 44px',
+    marginTop: theme.spacing(1.5),
+    color: theme.palette.common.white,
+    padding: theme.spacing(1.75, 5.5),
     border: '1px white solid',
     fontSize: 16,
     '&:hover': {
