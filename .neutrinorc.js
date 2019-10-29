@@ -1,14 +1,15 @@
+const airbnb = require('@neutrinojs/airbnb');
+const react = require('@neutrinojs/react');
+const jest = require('@neutrinojs/jest');
+
 module.exports = {
   use: [
-    '@neutrinojs/airbnb',
-    [
-      '@neutrinojs/react',
-      {
-        html: {
-          title: 'jsone-docs'
-        }
+    airbnb(),
+    react({
+      html: {
+        title: 'jsone-docs'
       }
-    ],
-    '@neutrinojs/jest'
+    }),
+    jest()
   ]
 };

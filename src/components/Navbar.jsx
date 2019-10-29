@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
