@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import InterfaceTabs from './InterfaceTabs';
 
 const useStyles = makeStyles((theme) => ({
   interfaceWrapper: {
@@ -22,6 +23,7 @@ const Interface = () => {
     <Box className={classes.interfaceWrapper}>
       <Container className={classes.interface}>
         <h1> Interface </h1>
+        <InterfaceTabs />
       </Container>
     </Box>
   );
