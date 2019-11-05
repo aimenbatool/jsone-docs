@@ -7,6 +7,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core/';
+import JavaScript from './interfaceContent/JavaScript';
 
 const TabPanel = (props) => {
   const {
@@ -46,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: '#e1e2e5',
     display: 'flex',
-    height: 224,
+    // height: 224,
+    textAlign: 'left',
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
@@ -77,7 +79,7 @@ const InterfaceTabs = () => {
         <Tab label="GoLang" {...a11yProps(3)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        JavaScript
+        <JavaScript />
       </TabPanel>
       <TabPanel value={value} index={1}>
         TypeScript
