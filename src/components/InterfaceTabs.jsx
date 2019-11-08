@@ -47,7 +47,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: '#e1e2e5',
     display: 'flex',
-    // height: 224,
     textAlign: 'left',
   },
   tabs: {

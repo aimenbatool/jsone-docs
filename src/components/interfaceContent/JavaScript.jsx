@@ -20,8 +20,8 @@ const useStyle = makeStyles((theme) => ({
 const JavaScript = () => {
   const classes = useStyle();
 
-  const installation = `npm install --save json-e
-yarn add json-e`;
+  const installation = `> npm install --save json-e
+> yarn add json-e`;
   const importGuide = `import jsone from 'json-e';
 var template = {a: {$eval: "foo.bar"}};
 var context = {foo: {bar: "zoo"}};
@@ -63,7 +63,7 @@ console.log(jsone(template, context));  // -> 3`;
         in the context, which must guard against such behavior.
         </Box>
 
-        <h3>Brwoser</h3>
+        <h3>Browser</h3>
         JSON-e is distributed as a CommonJS package is not designed to be included
         directly in a browser with script. Instead, it must be incorporated using
         a tool that understands CommonJS such as Webpack. See Neutrino for an easy,

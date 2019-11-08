@@ -6,7 +6,6 @@ import InterfaceTabs from './InterfaceTabs';
 const useStyles = makeStyles((theme) => ({
   interfaceWrapper: {
     backgroundColor: '#e0e2e5',
-    minHeight: theme.spacing(62),
   },
   interface: {
     padding: theme.spacing(0.25),
