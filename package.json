@@ -4,21 +4,30 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "neutrino build",
-    "start": "neutrino start",
-    "lint": "neutrino lint",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
+    "lint": "eslint --cache --format codeframe --ext js,jsx src test",
     "test": "neutrino test"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-hot-loader": "^3"
+    "react-hot-loader": "^3",
+    "react-syntax-highlighter": "^11.0.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
   },
   "devDependencies": {
-    "@neutrinojs/airbnb": "^8.3.0",
-    "@neutrinojs/jest": "^8.3.0",
-    "@neutrinojs/react": "^8.3.0",
-    "neutrino": "^8.3.0"
+    "@mozilla-frontend-infra/react-lint": "^2.0.1",
+    "@neutrinojs/airbnb": "9.0.0-rc.4",
+    "@neutrinojs/jest": "9.0.0-rc.4",
+    "@neutrinojs/react": "9.0.0-rc.4",
+    "neutrino": "9.0.0-rc.4"
   }
 }
