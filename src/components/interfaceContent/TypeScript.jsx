@@ -28,10 +28,6 @@ var context = {foo: {bar: "zoo"}};
 console.log(jsone(template, context));
   // -> { a: 'zoo' }`;
 
-  const functionsGuide = `var template = {$eval: "foo(1)"};
-var context = {"foo": function(x) { return x + 2; }};
-console.log(jsone(template, context));  // -> 3`;
-
   return (
     <Container>
       <Box>
