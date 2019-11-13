@@ -10,6 +10,7 @@ import { Box } from '@material-ui/core/';
 import JavaScript from './interfaceContent/JavaScript';
 import TypeScript from './interfaceContent/TypeScript';
 import Python from './interfaceContent/Python';
+import GoLang from './interfaceContent/GoLang';
 
 const TabPanel = (props) => {
   const {
@@ -81,7 +82,7 @@ const InterfaceTabs = () => {
         <Tab label="JavaScript" {...a11yProps(0)} />
         <Tab label="TypeScript" {...a11yProps(1)} />
         <Tab label="Python" {...a11yProps(2)} />
-        <Tab label="GoLang" {...a11yProps(3)} />
+        <Tab label="Go" {...a11yProps(3)} />
       </Tabs>
       <Box className={classes.tabPanel}>
         <TabPanel value={value} index={0}>
@@ -94,7 +95,7 @@ const InterfaceTabs = () => {
           <Python />
         </TabPanel>
         <TabPanel value={value} index={3}>
-          GoLang
+          <GoLang />
         </TabPanel>
       </Box>
     </div>

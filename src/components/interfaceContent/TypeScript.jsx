@@ -15,6 +15,12 @@ const useStyle = makeStyles((theme) => ({
     marginRight: theme.spacing(0.5),
     border: '1px solid',
   },
+  link: {
+    color: '#1e3652',
+    padding: theme.spacing(0.125),
+    borderBottom: '1px solid black',
+    textDecoration: 'none',
+  },
 }));
 
 const TypeScript = () => {
@@ -46,7 +52,7 @@ console.log(jsone(template, context));
           <b> json-e </b>
           is a CommonJS module, the package must be imported like this
           {' '}
-          <a href="https://www.typescriptlang.org/docs/handbook/modules.html#export--and-import--require">(more..)</a>
+          <a className={classes.link} href="https://www.typescriptlang.org/docs/handbook/modules.html#export--and-import--require">(more..)</a>
           {' '}
           for type definitions to work properly:
         </p>
