@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core/';
 import JavaScript from './interfaceContent/JavaScript';
 import TypeScript from './interfaceContent/TypeScript';
+import Python from './interfaceContent/Python';
 
 const TabPanel = (props) => {
   const {
@@ -90,7 +91,7 @@ const InterfaceTabs = () => {
           <TypeScript />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Python
+          <Python />
         </TabPanel>
         <TabPanel value={value} index={3}>
           GoLang
