@@ -51,6 +51,10 @@ const useStyles = makeStyles((theme) => ({
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
+    overflow: 'visible',
+  },
+  tabPanel: {
+    overflow: 'scroll',
   },
 }));
 
@@ -77,18 +81,20 @@ const InterfaceTabs = () => {
         <Tab label="Python" {...a11yProps(2)} />
         <Tab label="GoLang" {...a11yProps(3)} />
       </Tabs>
-      <TabPanel value={value} index={0}>
-        <JavaScript />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        TypeScript
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Python
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        GoLang
-      </TabPanel>
+      <Box className={classes.tabPanel}>
+        <TabPanel value={value} index={0}>
+          <JavaScript />
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          TypeScript
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          Python
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          GoLang
+        </TabPanel>
+      </Box>
     </div>
   );
 };
