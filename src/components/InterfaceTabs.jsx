@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core/';
 import JavaScript from './interfaceContent/JavaScript';
+import TypeScript from './interfaceContent/TypeScript';
 
 const TabPanel = (props) => {
   const {
@@ -86,7 +87,7 @@ const InterfaceTabs = () => {
           <JavaScript />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          TypeScript
+          <TypeScript />
         </TabPanel>
         <TabPanel value={value} index={2}>
           Python
