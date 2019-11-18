@@ -8,6 +8,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core/';
 import JavaScript from './interfaceContent/JavaScript';
+import TypeScript from './interfaceContent/TypeScript';
+import Python from './interfaceContent/Python';
+import GoLang from './interfaceContent/GoLang';
 
 const TabPanel = (props) => {
   const {
@@ -51,6 +54,10 @@ const useStyles = makeStyles((theme) => ({
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
+    overflow: 'visible',
+  },
+  tabPanel: {
+    overflow: 'scroll',
   },
 }));
 
@@ -75,20 +82,22 @@ const InterfaceTabs = () => {
         <Tab label="JavaScript" {...a11yProps(0)} />
         <Tab label="TypeScript" {...a11yProps(1)} />
         <Tab label="Python" {...a11yProps(2)} />
-        <Tab label="GoLang" {...a11yProps(3)} />
+        <Tab label="Go" {...a11yProps(3)} />
       </Tabs>
-      <TabPanel value={value} index={0}>
-        <JavaScript />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        TypeScript
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Python
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        GoLang
-      </TabPanel>
+      <Box className={classes.tabPanel}>
+        <TabPanel value={value} index={0}>
+          <JavaScript />
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <TypeScript />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <Python />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <GoLang />
+        </TabPanel>
+      </Box>
     </div>
   );
 };

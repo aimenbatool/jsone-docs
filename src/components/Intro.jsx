@@ -1,6 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Container, Button } from '@material-ui/core';
+import {
+  Box,
+  Container,
+  Button,
+  Typography,
+} from '@material-ui/core';
 import IntroBanner from '../assets/intro2.jpg';
 
 const useStyles = makeStyles((theme) => ({
@@ -14,15 +19,17 @@ const useStyles = makeStyles((theme) => ({
   },
   intro: {
     marginTop: theme.spacing(15),
-    fontFamily: 'Merriweather, serif',
     color: theme.palette.common.white,
     textAlign: 'center',
   },
   title: {
-    fontSize: 56,
+    fontFamily: 'Merriweather, serif',
   },
   description: {
     fontFamily: 'Nanum Gothic, sans-serif',
+    fontWeight: 'bold',
+    marginTop: theme.spacing(6),
+    marginBottom: theme.spacing(2.5),
   },
   learnMoreButton: {
     marginTop: theme.spacing(1.5),
@@ -44,10 +51,10 @@ const Intro = () => {
   return (
     <Box className={classes.introWrapper}>
       <Container className={classes.intro}>
-        <h1 className={classes.title}>JSON-e V3.0.1</h1>
-        <h2 className={classes.description}>
+        <Typography className={classes.title} variant="h2">JSON-e V3.0.1</Typography>
+        <Typography className={classes.description} variant="h6">
           A data-structure parameterization system for embedding context in JSON objects
-        </h2>
+        </Typography>
         <Button className={classes.learnMoreButton}>Learn More</Button>
       </Container>
     </Box>
