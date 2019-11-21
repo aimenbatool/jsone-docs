@@ -1,14 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 
 const root = document.getElementById('root');
 const load = () => render(
   (
-    <AppContainer>
-      <App />
-    </AppContainer>
+    <Router>
+      <AppContainer>
+        <App />
+      </AppContainer>
+    </Router>
   ), root,
 );
 
