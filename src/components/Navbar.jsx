@@ -8,6 +8,7 @@ import {
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Link } from 'react-router-dom';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,7 +49,7 @@ const NavBar = () => {
               JSONE
           </Typography>
           <Link className={classes.navLink} to="/">Home</Link>
-          <Link className={classes.navLink} to="/interface">Interface</Link>
+          <NavLink className={classes.navLink} to="/#interface">Interface</NavLink>
           <Link className={classes.navLink} to="/about">About</Link>
           <Link className={classes.navLink} to="/playground">Playground</Link>
 
