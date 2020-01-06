@@ -49,7 +49,7 @@ const NavBar = () => {
               JSONE
           </Typography>
           <Link className={classes.navLink} to="/">Home</Link>
-          <NavLink className={classes.navLink} to="/#interface">Interface</NavLink>
+          <NavLink smooth className={classes.navLink} to="/#interface">Interface</NavLink>
           <Link className={classes.navLink} to="/about">About</Link>
           <Link className={classes.navLink} to="/playground">Playground</Link>
 
