@@ -19,7 +19,7 @@ const Interface = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.interfaceWrapper}>
+    <Box className={classes.interfaceWrapper} id="interface">
       <Container className={classes.interface}>
         <h1> Interface </h1>
         <InterfaceTabs />

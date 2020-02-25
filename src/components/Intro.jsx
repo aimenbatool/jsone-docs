@@ -6,7 +6,7 @@ import {
   Button,
   Typography,
 } from '@material-ui/core';
-import IntroBanner from '../assets/intro2.jpg';
+import IntroBanner from '../assets/banner.jpg';
 
 const useStyles = makeStyles((theme) => ({
   introWrapper: {

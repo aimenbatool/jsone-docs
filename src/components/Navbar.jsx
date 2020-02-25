@@ -4,10 +4,11 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Button,
   IconButton,
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { Link } from 'react-router-dom';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,6 +26,16 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  navLink: {
+    textDecoration: 'none',
+    textTransform: 'uppercase',
+    borderRadius: 4,
+    color: '#283d4a',
+    padding: 8,
+    '&:hover': {
+      backgroundColor: '#e0e0e0a6',
+    },
+  },
 }));
 
 const NavBar = () => {
@@ -37,10 +48,10 @@ const NavBar = () => {
           <Typography variant="h6" className={classes.title}>
               JSONE
           </Typography>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Interfaces</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Playground</Button>
+          <Link className={classes.navLink} to="/">Home</Link>
+          <NavLink smooth className={classes.navLink} to="/#interface">Interface</NavLink>
+          <Link className={classes.navLink} to="/about">About</Link>
+          <Link className={classes.navLink} to="/playground">Playground</Link>
 
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <GitHubIcon />
